@@ -1,0 +1,86 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "paperforge"
+version = "0.2.0"
+description = "Academic toolkit: turn Markdown into publication-ready PDFs, PowerPoint decks, and scientific figures."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Matheus Laidler" }]
+keywords = ["academic", "markdown", "pdf", "powerpoint", "scientific-charts", "report-generation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Documentation",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+dependencies = [
+    "typer>=0.12",
+    "rich>=13.7",
+    "markdown>=3.6",
+    "pymdown-extensions>=10.7",
+    "python-pptx>=0.6.23",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "PyYAML>=6.0",
+    "PySide6>=6.6",
+    "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "ruff>=0.4",
+    "pyinstaller>=6.6",
+    "build>=1.2",
+]
+
+[project.scripts]
+paperforge-cli = "paperforge.cli:app"
+
+[project.gui-scripts]
+paperforge = "paperforge.gui.app:launch"
+
+[project.urls]
+Homepage = "https://github.com/matheuslaidler/paperforge"
+Documentation = "https://github.com/matheuslaidler/paperforge#readme"
+Issues = "https://github.com/matheuslaidler/paperforge/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/paperforge"]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"src/paperforge/locales" = "paperforge/locales"
+"src/paperforge/pdf/styles" = "paperforge/pdf/styles"
+
+[tool.hatch.build]
+include = [
+    "src/paperforge/**/*.py",
+    "src/paperforge/**/*.yaml",
+    "src/paperforge/**/*.css",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "PL"]
+ignore = ["PLR0913", "PLR2004", "E501"]

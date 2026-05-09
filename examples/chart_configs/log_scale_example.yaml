@@ -1,0 +1,27 @@
+template: log-scale
+title: "Survival vs time (semi-log)"
+xlabel: "Days"
+ylabel: "Viability (% CFU, log scale)"
+source: "PaperForge demo"
+log_y: true
+
+series:
+  - label: "Wild type"
+    x: [1, 3, 5, 7, 9, 11, 13]
+    y: [100, 80, 35, 10, 4, 1.5, 0.7]
+    marker: o
+  - label: "Antioxidant overexpression"
+    x: [1, 3, 5, 7, 9, 11, 13]
+    y: [100, 90, 70, 40, 18, 6, 2]
+    marker: ^
+
+vlines:
+  - x: 7
+    label: "day 7 reference"
+    color: gray
+
+bands:
+  - x_start: 5
+    x_end: 9
+    color: "#06A77D"
+    alpha: 0.10

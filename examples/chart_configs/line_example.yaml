@@ -1,0 +1,17 @@
+template: line
+title: "Sample line chart"
+xlabel: "Time (h)"
+ylabel: "Concentration (g/L)"
+source: "PaperForge demo data"
+log_y: false
+show_markers: true
+
+series:
+  - label: "Sample A"
+    x: [0, 6, 12, 18, 24, 36, 48]
+    y: [0, 8, 22, 38, 50, 58, 62]
+    marker: o
+  - label: "Sample B"
+    x: [0, 6, 12, 18, 24, 36, 48]
+    y: [0, 5, 14, 24, 34, 42, 46]
+    marker: s

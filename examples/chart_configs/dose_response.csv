@@ -1,0 +1,13 @@
+strain,dose,viability
+Lab,0,100
+Lab,4,98
+Lab,8,78
+Lab,10,61.1
+Lab,12,30
+Lab,14,8
+Industrial,0,100
+Industrial,4,99
+Industrial,8,94
+Industrial,10,88.3
+Industrial,12,65
+Industrial,14,25

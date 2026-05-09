@@ -1,0 +1,19 @@
+template: bar
+title: "Yield comparison"
+xlabel: ""
+ylabel: "Yield (g/L)"
+source: "PaperForge demo"
+
+categories:
+  - "Strain 1\n30 °C"
+  - "Strain 1\n40 °C"
+  - "Strain 2\n30 °C"
+  - "Strain 2\n40 °C"
+
+series:
+  - label: "Control"
+    color: "#D62246"
+    values: [60.3, 35.2, 66.1, 45.4]
+  - label: "Treated"
+    color: "#06A77D"
+    values: [69.3, 44.0, 73.6, 55.3]

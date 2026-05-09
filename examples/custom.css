@@ -1,0 +1,39 @@
+/*
+ * Example custom CSS for `paperforge pdf --css examples/custom.css`.
+ * Override anything; the markdown body becomes the document body.
+ */
+
+@page { size: A4 portrait; margin: 2.4cm; }
+
+html, body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-size: 11pt;
+    line-height: 1.55;
+    color: #1B263B;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+h1 { color: #1B263B; border-bottom: 3px solid #FCA311; padding-bottom: 6px; }
+h2 { color: #14213D; border-bottom: 1px solid #ddd; padding-bottom: 4px; margin-top: 28px; }
+
+a { color: #FCA311; text-decoration: none; }
+
+table {
+    border-collapse: collapse; width: 100%; margin: 12px 0;
+    font-size: 9.5pt; page-break-inside: avoid;
+}
+th { background: #14213D; color: white; padding: 6px 8px; }
+td { border: 1px solid #ccd; padding: 5px 8px; }
+tr:nth-child(even) td { background: #f4f5f7; }
+
+blockquote {
+    border-left: 4px solid #FCA311;
+    padding: 8px 14px; background: #fff7e8;
+    color: #333; margin: 12px 0;
+}
+
+.referencias p {
+    text-indent: -1.2cm; padding-left: 1.2cm;
+    margin: 6px 0; font-size: 10pt; line-height: 1.45;
+}
