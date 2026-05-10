@@ -6,6 +6,8 @@
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 [![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20Linux-lightgrey.svg)](#install)
 
+<img width="25%" alt="image" src="https://github.com/user-attachments/assets/99b0fe66-bfb9-4dd6-a65d-207b013a3b94" />
+
 PaperForge is a single executable with three tabs:
 
 - **PDF** — Markdown → A4 PDF (default / minimal / academic styles, MathJax, ABNT references).
@@ -16,6 +18,10 @@ PaperForge is a single executable with three tabs:
 
 No LaTeX. No Pandoc. No `wkhtmltopdf`. Just one binary plus any Chromium-family browser
 (Edge / Chrome / Chromium / Brave) for the PDF backend.
+
+---
+
+<img width="85%" alt="image" src="https://github.com/user-attachments/assets/f4e9d54c-4328-4751-9b2d-5f589952dcb5" />
 
 ---
 
@@ -53,6 +59,8 @@ Every template comes pre-loaded with a real example. The `log-scale` template sh
 a real fermentation study (biomass × ethanol on log-Y, 6 series + 3 Ghose-Tyagi envelopes + the
 industrial VHG band) — switch to it and you have a full publication-ready chart in one
 click.
+
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/9e6e645f-12e5-4221-80d0-290b30391aaf" />
 
 ## CLI mode (advanced)
 
