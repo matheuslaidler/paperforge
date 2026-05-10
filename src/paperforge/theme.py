@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-# Validated palette (matches the original Brandao project; battle-tested).
+# Validated scientific palette (battle-tested across PDF, slides and charts).
 PRIMARY = "#2E86AB"
 SECONDARY = "#06A77D"
 ACCENT = "#D62246"

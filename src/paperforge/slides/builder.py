@@ -9,9 +9,8 @@ from pathlib import Path
 from typing import Optional
 
 from pptx import Presentation
-from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN
-from pptx.util import Emu, Inches
+from pptx.util import Inches
 
 from paperforge import i18n
 from paperforge.slides.cover import (

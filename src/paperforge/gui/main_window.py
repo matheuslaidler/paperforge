@@ -2,10 +2,9 @@
 
 from __future__ import annotations
 
-from PySide6.QtCore import QSize, Qt
+from PySide6.QtCore import QSize
 from PySide6.QtGui import QAction, QIcon
 from PySide6.QtWidgets import (
-    QLabel,
     QMainWindow,
     QMenu,
     QMessageBox,

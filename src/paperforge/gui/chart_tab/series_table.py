@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-from itertools import cycle
 from pathlib import Path
 
 from PySide6.QtCore import Qt, Signal

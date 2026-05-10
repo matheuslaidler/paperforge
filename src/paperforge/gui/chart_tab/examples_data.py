@@ -76,9 +76,9 @@ def _bar_example() -> TemplateExample:
     )
 
 
-# ---------- LOG-SCALE (Brandão biomass × ethanol) ------------------------- #
+# ---------- LOG-SCALE (yeast biomass × ethanol fermentation) -------------- #
 def _log_scale_example() -> TemplateExample:
-    """Reproduces the Brandão biomass-vs-ethanol log chart out of the box."""
+    """Real fermentation case study: biomass-vs-ethanol log chart out of the box."""
     F = 0.30  # OD600 -> g/L dry weight conversion factor
 
     def od_to_g(od: list[float]) -> list[float]:

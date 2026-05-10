@@ -3,9 +3,7 @@
 from __future__ import annotations
 
 from PySide6.QtCore import Signal
-from PySide6.QtGui import QColor
 from PySide6.QtWidgets import (
-    QColorDialog,
     QGroupBox,
     QHBoxLayout,
     QHeaderView,

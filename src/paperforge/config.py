@@ -12,7 +12,7 @@ Layered resolution (lowest to highest precedence):
 from __future__ import annotations
 
 import os
-from dataclasses import asdict, dataclass, field, fields
+from dataclasses import asdict, dataclass, fields
 from pathlib import Path
 from typing import Any
 

@@ -49,7 +49,7 @@ def root(
         i18n.reload(lang)
     if verbose:
         # Future hook: configure log level globally.
-        console.print(f"[muted]verbose mode on[/]")
+        console.print("[muted]verbose mode on[/]")
 
 
 # --------------------------------------------------------------------------- #

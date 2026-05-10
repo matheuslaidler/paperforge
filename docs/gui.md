@@ -144,19 +144,20 @@ Click **Save figure…** to write the image. The button writes every format
 checked in *Style* (e.g. `chart.png` and `chart.svg`) and shows the path
 in a confirmation dialog.
 
-## Reproducing the Brandão case (`biomassa × etanol log`)
+## Walkthrough: a real biomass × ethanol log chart
 
-A complete walkthrough that produces a chart equivalent to the original
-hand-coded `biomassa_etanol_log.py`:
+The `log-scale` template ships with a working example so you can test the
+full feature set without typing anything. Here's how a typical workflow
+looks if you want to reproduce a similar chart from scratch:
 
 1. Template tab: pick `log-scale`. Set title, axis labels, source citation.
 2. Style tab: enable *Log scale on Y*.
-3. Data tab: add 6 series (TISTR 30 °C ±NAC, TISTR 40 °C ±NAC, BY4742 40 °C ±NAC),
-   set markers (`s`, `^`, `v`) and colors. Fill the XY tables with the
-   Burphan 2018 timepoints.
+3. Data tab: add one series per condition (use markers `s`, `^`, `v` to
+   distinguish strains/temperatures), then fill the XY tables with your
+   experimental timepoints.
 4. Annotations tab:
-   - Vertical line at `x = 50`, label "inhibition limit".
-   - Band from 60 to 75, color `#06A77D`, alpha `0.10` (industrial VHG zone).
-   - Three envelopes: `10 * (1 - x / 75) ** 1`, `10 * (1 - x / 90) ** 1`,
-     `10 * (1 - x / 105) ** 1` (Ghose-Tyagi).
+   - Vertical line at the typical inhibition threshold for your strain.
+   - Shaded band over the operational range you want to highlight.
+   - One or more theoretical envelopes (`10 * (1 - x / Pcrit) ** 1` is
+     the classic Levenspiel/Ghose-Tyagi form).
 5. Click **Save figure…** to export a publication-grade PNG.

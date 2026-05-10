@@ -14,7 +14,6 @@ from PySide6.QtWidgets import (
     QHBoxLayout,
     QLineEdit,
     QMessageBox,
-    QPlainTextEdit,
     QSpinBox,
     QSplitter,
     QVBoxLayout,

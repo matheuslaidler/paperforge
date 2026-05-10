@@ -17,7 +17,7 @@ from paperforge.charts.data_loader import (
 )
 from paperforge.charts.palette import get as get_palette
 from paperforge.charts.templates import REGISTRY
-from paperforge.utils.logging import info, warn
+from paperforge.utils.logging import info
 
 
 @dataclass

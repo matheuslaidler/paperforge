@@ -36,6 +36,12 @@ Just open the app and pick a tab.
 ### PDF / PowerPoint
 Drag a `.md` file into the source field, set output path, click **Build**. Logs stream live.
 
+### Including charts in slides
+Generate a chart in the **Chart** tab → click **Save figure…** to export it as
+PNG → reference it in your slide source with
+`![alt text](path/to/chart.png)`. The image automatically lands on the
+right-hand column of that slide while bullets/text take the left column.
+
 ### Chart
 1. Pick a template — example data appears immediately.
 2. Edit series in the data table, or click **Import CSV…**.
@@ -44,7 +50,7 @@ Drag a `.md` file into the source field, set output path, click **Build**. Logs 
 5. Click **Save figure…** to export PNG/SVG/PDF.
 
 Every template comes pre-loaded with a real example. The `log-scale` template ships with
-the published Brandão biomass × ethanol study (6 series + 3 Ghose-Tyagi envelopes + the
+a real fermentation study (biomass × ethanol on log-Y, 6 series + 3 Ghose-Tyagi envelopes + the
 industrial VHG band) — switch to it and you have a full publication-ready chart in one
 click.
 

@@ -12,7 +12,7 @@ from paperforge import i18n
 from paperforge.browser import detect as detect_browser
 from paperforge.pdf.post_processors import wrap_references_section
 from paperforge.pdf.renderer import render_markdown, wrap_html
-from paperforge.utils.logging import console, info, ok
+from paperforge.utils.logging import console, info
 from paperforge.utils.paths import asset
 
 BUILTIN_STYLES = ("default", "minimal", "academic")

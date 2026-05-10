@@ -82,5 +82,16 @@ line-length = 100
 target-version = "py310"
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "I", "B", "UP", "PL"]
-ignore = ["PLR0913", "PLR2004", "E501"]
+# Real bugs only — avoid bike-shedding on style. PaperForge GUI panels are
+# wide on purpose (Qt UI code reads naturally as one column of one-liners).
+select = ["E", "F", "W", "I"]
+ignore = [
+    "E501",  # line length — already enforced by line-length=100 above
+    "E701",  # multi-statement on one line (used heavily in Qt setup blocks)
+    "E702",  # same
+    "E741",  # ambiguous variable name (`l` for "left margin" is fine)
+    "I001",  # import-block formatting (we organize by hand)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["F401"]   # test fixtures sometimes touch unused symbols

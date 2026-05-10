@@ -36,7 +36,7 @@ class ChartConfig:
 
 
 def add_source_box(ax, citation: str) -> None:
-    """Replicates the validated bottom-right citation box from the Brandao charts."""
+    """Bottom-right citation box used consistently across every chart template."""
     ax.text(
         0.985, 0.025,
         citation,

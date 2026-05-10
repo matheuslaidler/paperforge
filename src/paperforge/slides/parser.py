@@ -60,7 +60,7 @@ def parse_table(lines: Iterable[str]) -> list[list[str]]:
 #  Block parser                                                               #
 # --------------------------------------------------------------------------- #
 def parse_blocks(body: str) -> list[Block]:
-    """Split a slide body into typed blocks. Mirrors the original Brandao behavior."""
+    """Split a slide body into typed blocks (paragraph/list/table/code/quote/image)."""
     body = body.strip("\n")
     blocks: list[Block] = []
     buf_para: list[str] = []
